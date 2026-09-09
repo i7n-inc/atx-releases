@@ -2,7 +2,7 @@
 
 Public download host for ATX binaries.
 
-Documentation: [docs.iteration.sh](https://docs.iteration.sh)
+Documentation: [docs.iteration.sh](https://docs.iteration.sh) · Changelog: [docs.iteration.sh/changelog](https://docs.iteration.sh/changelog)
 
 Also note the versioned filenames — the `latest/download/atx-<os>-<arch>` shape is NOT used; use the manifest to discover the current version, then the pinned URL.
 
