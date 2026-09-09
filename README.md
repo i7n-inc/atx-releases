@@ -1,22 +1,20 @@
 # ATX Releases
 
-This repository is the **release-only host** for ATX binaries. It contains no application source, issues, or pull requests; issues live in [i7n-inc/atx](https://github.com/i7n-inc/atx).
+Public download host for ATX binaries.
+
+Documentation: [docs.iteration.sh](https://docs.iteration.sh)
+
+Also note the versioned filenames — the `latest/download/atx-<os>-<arch>` shape is NOT used; use the manifest to discover the current version, then the pinned URL.
 
 ## URL contract
 
 | Purpose | URL |
 |---|---|
-| Latest binary | https://github.com/i7n-inc/atx-releases/releases/latest/download/atx-<os>-<arch> |
-| Pinned binary | https://github.com/i7n-inc/atx-releases/releases/download/<TAG>/atx-<os>-<arch> |
-| Latest manifest | https://github.com/i7n-inc/atx-releases/releases/latest/download/version.json |
-| Latest checksums | https://github.com/i7n-inc/atx-releases/releases/latest/download/checksums.txt |
+| Latest manifest | `https://github.com/i7n-inc/atx-releases/releases/latest/download/version.json` |
+| Pinned binary | `https://github.com/i7n-inc/atx-releases/releases/download/<VERSION>/atx-<VERSION>-<os>-<arch>` |
+| Pinned checksums | `https://github.com/i7n-inc/atx-releases/releases/download/<VERSION>/checksums.txt` |
+| Pinned manifest | `https://github.com/i7n-inc/atx-releases/releases/download/<VERSION>/version.json` |
 
-`<os>` ∈ {darwin, linux}. `<arch>` ∈ {amd64, arm64}.
-
-## Releases
-
-Every release cut in [i7n-inc/atx](https://github.com/i7n-inc/atx) mirrors artifacts here at the same tag. The `atx` self-updater reads `version.json` from this repository.
+`<os>` ∈ `{darwin, linux}`. `<arch>` ∈ `{amd64, arm64}`.
 
 All release assets are public and downloadable without authentication.
-
-See the parent repository's [CHANGELOG](https://github.com/i7n-inc/atx/blob/main/CHANGELOG.md) for release notes.
