@@ -86,3 +86,22 @@ case ":$PATH:" in
      log "        echo 'export PATH=\"${DEST}:\$PATH\"' >> ~/.profile"
      ;;
 esac
+
+log ""
+if ! command -v gh >/dev/null 2>&1; then
+  log "next: install the GitHub CLI (https://cli.github.com), then run:"
+  log "  ${DEST}/atx server start"
+  exit 0
+fi
+
+log "Starting the ATX daemon..."
+if "${DEST}/atx" server start; then
+  log ""
+  log "ATX is up. Manage it with:"
+  log "  ${DEST}/atx server status"
+  log "  ${DEST}/atx server stop"
+else
+  log ""
+  log "warn: 'atx server start' failed. Fix the reported error and re-run:"
+  log "  ${DEST}/atx server start"
+fi
