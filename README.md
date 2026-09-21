@@ -10,6 +10,7 @@ Also note the versioned filenames — the `latest/download/atx-<os>-<arch>` shap
 
 | Purpose | URL |
 |---|---|
+| Install script | `https://github.com/i7n-inc/atx-releases/raw/main/scripts/install.sh` |
 | Latest manifest | `https://github.com/i7n-inc/atx-releases/releases/latest/download/version.json` |
 | Pinned binary | `https://github.com/i7n-inc/atx-releases/releases/download/<VERSION>/atx-<VERSION>-<os>-<arch>` |
 | Pinned checksums | `https://github.com/i7n-inc/atx-releases/releases/download/<VERSION>/checksums.txt` |
